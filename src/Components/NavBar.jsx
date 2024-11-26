@@ -5,7 +5,7 @@ export const Navbar = () => {
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <nav className="p-6 text-sm sm:text-md sm:px-[6%] xl:px-[11%] flex justify-between items-center">
+        <nav className="p-6 text-sm sm:text-md sm:px-[6%] xl:px-[12%] flex justify-between items-center">
             <div className="flex flex-row gap-2 font-semibold items-center">
                 <div className="bg-yellow-300 p-3 rounded-xl"></div>
                 <div>CHANDRU</div>

@@ -7,30 +7,34 @@ export default {
   theme: {
     extend: {
       colors: {
-        yellow :{
+        gray: {
+          1000: "#f1f1f1"
+        },
+        yellow: {
           300: "#ecc052"
         },
-        blue :{
-          200 : "#0077B5",
-          1000 : "#1da1f2"
+        blue: {
+          200: "#0077B5",
+          1000: "#1da1f2"
         }
       },
       keyframes: {
-        slideIn: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0)' },
+        moveGradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
         },
-        slideOut: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(100%)' },
+        torchGradient: {
+          '0%': { backgroundPosition: '50% 0%' },
+          '50%': { backgroundPosition: '50% 100%' },
+          '100%': { backgroundPosition: '50% 0%' },
         },
       },
       animation: {
-        slideIn: 'slideIn 0.3s ease-out forwards',
-        slideOut: 'slideOut 0.3s ease-in forwards',
+        moveGradient: 'moveGradient 3s ease infinite',
+        torchGradient: 'torchGradient 5s ease infinite',
       },
     },
   },
   plugins: [],
 }
-

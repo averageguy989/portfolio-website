@@ -1,12 +1,19 @@
 
 
-export const IntroductionBar = () => {
-    return (
-        <div className="col-span-1 rounded-2xl bg-blue-100 sm:col-span-2 sm:flex flex-col flex-start p-10 sm:rounded-3xl bg-gradient-to-r from-blue-100 via-purple-200 to-pink-100 bg-[length:200%_200%] animate-moveGradient">
-            <div className="text-2xl sm:text-5xl font-medium sm:pr-[5rem]">Hello, I’m Chandru, a fullstack developer With 6 months of experience.</div>
-            <div className="text-medium sm:text-lg py-3 sm:pr-[5rem] sm:py-10">I am a passionate web developer and a student at IIT Kharagpur, skilled in HTML, CSS, Tailwind, React, Express, MongoDB, Python, and C++. This is my first project, showcasing my dedication to building efficient and innovative web solutions.</div>
-            <div className="pt-6 grid grid-cols-4 sm:grid-cols-10 sm:pt-[6rem] sm:gap-5 gap-8">
-                <a className="rounded-3xl bg-black text-white py-3 text-md col-span-4 sm:col-span-3 text-center" href="mailto:your-email@gmail.com?subject=Collaboration&body=Hi,%20I%20would%20like%20to%20discuss%20a%20project%20with%20you.">
+export const ContactCard = () => {
+    return(
+        <div className="rounded-2xl flex flex-col justify-between bg-gray-1000 p-6 sm:p-10 mb-[2rem] bg-gradient-to-r from-green-300 via-yellow-300 to-green-300 animate-gradient-torch">
+            <div className="px-4 sm:px-0">
+                <div className="text-5xl sm:text-6xl font-semibold py-5 sm:py-3">
+                    Want to work together?
+                </div>
+                <div className="pt-10 sm:py-2 text-md sm:text-lg">
+                    Feel free to reach out for collaborations or just a friendly hello
+                </div>
+                <a href="mailto:chandrucp987@gmail.com" className="text-lg">chandrucp987@gmail.com</a>
+            </div>
+            <div className="p-4 grid grid-cols-4 sm:grid-cols-12 sm:pt-[6rem] sm:gap-5 gap-8">
+                <a className="rounded-3xl bg-black text-white py-3 px-4 sm:px-0 text-md col-span-4 sm:col-span-2 text-center" href="mailto:your-email@gmail.com?subject=Collaboration&body=Hi,%20I%20would%20like%20to%20discuss%20a%20project%20with%20you.">
                     Contact Me
                 </a>
                 <div className="hover:fill-white bg-white w-12 h-12 rounded-3xl hover:bg-gradient-to-r from-orange-500 to-pink-500 flex justify-center items-center">
