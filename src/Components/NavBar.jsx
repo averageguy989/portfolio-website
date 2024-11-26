@@ -17,30 +17,35 @@ export const Navbar = () => {
             </nav>
             <div className="md:hidden">
             <Hamburger toggled={isOpen} toggle={setOpen} size={25} duration={0.4} hideOutline={false} color="#000000"/>
-            <div className={`absolute top-20 left-0 w-full bg-white h-full flex flex-col items-start p-8 gap-6 md:hidden 
-                ${isOpen ? 'animate-slideIn' : 'animate-slideOut'}`}>
-                  <a
-                    href="#home"
-                    className="font-medium text-2xl text-black"
-                    onClick={() => setOpen(false)}
-                  >
-                    Home
-                  </a>
-                  <a
-                    href="#projects"
-                    className="font-medium text-2xl text-black"
-                    onClick={() => setOpen(false)}
-                  >
-                    Projects
-                  </a>
-                  <a
-                    href="#contact"
-                    className="font-medium text-2xl text-black"
-                    onClick={() => setOpen(false)}
-                  >
-                    Contact
-                  </a>
-            </div>
+            {isOpen && (
+                      <div
+                        className={`absolute top-20 left-0 w-full bg-white flex flex-col items-start p-8 gap-6 md:hidden 
+                        ${isOpen ? 'animate-slideIn' : 'animate-slideOut'}`}
+                      >
+                      <a
+                        href="#home"
+                        className="font-medium text-2xl text-black"
+                        onClick={() => setOpen(false)}
+                      >
+                        Home
+                      </a>
+                      <a
+                        href="#projects"
+                        className="font-medium text-2xl text-black"
+                        onClick={() => setOpen(false)}
+                      >
+                        Projects
+                      </a>
+                      <a
+                        href="#contact"
+                        className="font-medium text-2xl text-black"
+                        onClick={() => setOpen(false)}
+                      >
+                        Contact
+                      </a>
+                      </div>
+                    )}
+
             </div>
         </nav>
     )
