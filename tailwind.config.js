@@ -10,9 +10,9 @@ export default {
         yellow :{
           300: "#ecc052"
         },
-        white :{
-          100 : "#efefed",
-          200 : "#999999"
+        blue :{
+          200 : "#0077B5",
+          1000 : "#1da1f2"
         }
       },
       keyframes: {
